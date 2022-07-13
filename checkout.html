@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="vivienne ashton blog and shop" content="Blog and shop called Vivienne Ashton run by Joyce." />
+
+        <title>Vivienne Ashton | shop</title>
+
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="images/favicon.png"/>
+
+<!--
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="/scripts/scripts.js"></script> 
+-->
+    
+    </head>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.typekit.net/ewi6csd.css">
+    
+    <body>
+
+        <div id="sidebar">
+                <img onclick="closeNav()" id="x" src="images/X.png">
+                <ul>
+                    <a href="index.html"><li>BLOG</li></a>
+                    <a href="#"><li>SHOP</li></a>
+                    <a href="#"><li>ABOUT</li></a>
+                    <a href="#"><li>CONTACT</li></a>
+                    <a href="#"><li>ACCOUNT</li></a>
+                </ul>
+        </div>
+        
+        <div class="wrapper">
+        
+            <header>
+            
+            <div id="navbar">
+            <div id="head">
+                <a href="https://www.instagram.com/vivienneashton/" target="_blank"><img class="instagram" src="https://img.icons8.com/metro/26/000000/instagram-new.png"></a>
+                <img class="envelope" src="https://img.icons8.com/android/24/000000/secured-letter.png">
+                <img class="icons" src="https://img.icons8.com/metro/26/000000/pinterest.png">
+                <img class="icons" src="https://img.icons8.com/metro/26/000000/twitter.png">
+            </div>
+                
+            <div id="subhead">
+                <img onclick="openNav()" id="burger" src="images/Hamburger.png">
+                
+                <a href="review.html"><img class="bag" src="images/Bag_Selected.png"></a>
+            </div>
+            </div>
+        
+            </header>
+        
+            <a href="index.html"><h1 class="logotype">VIVIENNE</h1></a>
+            <a href="index.html"><h1 class="line">ASHTON</h1></a>
+            
+            
+            
+                   
+            <section class="order">
+                
+                
+                <div class="review">
+                    <h2>Show Order Summary</h2>         
+                </div>
+                
+                <h2>Contact Information</h2>
+                <h6>Subscribe for a free branded item!</h6>
+                <h2 style="text-align: left">Already a member? <a href="x">Log in</a> </h2>
+                <form>
+                    <input type="text" name="email" placeholder="EMAIL">
+                    <input type="password" name="psw" placeholder="PASSWORD">
+                    <input type="checkbox" name="subscribe" value="Subscribe"> <h6 class="box">Subscribe</h6>
+                </form>
+                
+                <h2>Shipping Information</h2>
+                <form>
+                    <input type="text" name="firstname" placeholder="FIRST NAME *">
+                    <input type="text" name="lastname" placeholder="LAST NAME *">
+                    <input type="text" name="streetaddress" placeholder="STREET ADDRESS *">
+                    <input type="text" name="apt" placeholder="APT, SUITE #">
+                    <input type="text" name="city" placeholder="CITY *">
+                    <input type="text" name="country" placeholder="COUNTRY/REGION *">
+                    <input type="text" name="state" placeholder="STATE *">
+                    <input type="number" name="zip" placeholder="ZIP *">
+                    <input type="checkbox" name="billing" value="Use for Billing Address"> <h6 class="box">Use for Billing Address</h6>
+                </form><br/>
+                
+                <h2>Payment</h2>
+                <form>
+                    <input type="text" name="firstname" placeholder="NAME *">
+                    <input type="number" name="card" placeholder="XXXX-XXXX-XXXX-XXXX *">
+                    <input type="number" name="card" placeholder="CVV *">
+                    <input type="number" name="card" placeholder="XX/XXXX *">
+                </form>
+            
+                
+            
+                
+                <a href="thanks.html"><button class="add">Submit Order</button></a>
+               
+                <a href="index.html"><h4>Return to blog</h4></a>
+                
+              </section>  
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+        
+        
+        
+
+
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+            } else {
+            document.getElementById("navbar").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
+            }
+        </script>
+ 
+        
+        <script>
+            function openNav() {
+                document.getElementById("sidebar").style.width = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+            }
+        </script>
+        
+    </body>
+</html>
